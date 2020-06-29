@@ -29,12 +29,11 @@ while True:
         break
     # Формирую третий список, содержащий элементы обоих списков без повторений;
     if answer == 2:
-        for i in my_lst:
-            if i not in new_lst:
-                new_lst.append(i)
-        for i in my_lst2:
-            if i not in new_lst:
-                new_lst.append(i)
+        for a, b in zip(my_lst, my_lst2):
+            if a not in new_lst:
+                new_lst.append(a)
+            if b not in new_lst:
+                new_lst.append(b)
         break
     # Формирую третий список, содержащий элементы общие для двух списков
     elif answer == 3:
@@ -47,10 +46,10 @@ while True:
     # Формирую третий список, содержащий уникальные элементы каждого из списков;
     elif answer == 4:
         for i in my_lst:
-            if my_lst.count(i) == 1 and i not in new_lst:
+            if i not in my_lst2 and i not in new_lst:
                 new_lst.append(i)
         for i in my_lst2:
-            if my_lst2.count(i) == 1 and i not in new_lst:
+            if i not in my_lst and i not in new_lst:
                 new_lst.append(i)
         break
     # Формирую третий список, содержащий только минимальное и максимальное значение каждого из списков.
