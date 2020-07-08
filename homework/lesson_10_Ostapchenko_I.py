@@ -5,11 +5,9 @@
 Полученный результат возвращается из функции.
 """
 
-
 def mult(lst):
-    """Print integer multiplication"""
+    """Retuns the integer multiplication"""
     numb = 1
-    print(lst)
     for i in lst:
         numb *= i
     return numb
@@ -17,7 +15,10 @@ def mult(lst):
 
 n = int(input("Enter end number: "))
 lst = [i for i in range(1, n)]
-display = mult(lst)
+print("List of numbers: ", lst)
+
+print(mult(lst))
+
 
 """
 Задание 2
@@ -26,14 +27,15 @@ display = mult(lst)
 Полученный результат возвращается из функции.
 """
 
-
 def minimum(lst):
-    """return the minimum number"""
+    """returns the minimum number"""
     return min(lst)
 
 
 lst = [11, 2, 9, 13, 7]
 show = lst
+print(show)
+
 
 """
 Задание 3
@@ -41,16 +43,15 @@ show = lst
 параметра. Полученный результат возвращается из функции.
 """
 
-
 def is_prime(lst):
+    """Find prime numbers"""
     list_prime = []
-    """Define compound numbers"""
     for i in lst:
         prime = True
         for j in range(2, i):
             if i % j == 0:
                 prime = False
-        """add prime numbers to list"""
+
         if prime:
             list_prime.append(i)
     return list_prime
@@ -58,6 +59,7 @@ def is_prime(lst):
 
 n = int(input("End number: "))
 print(is_prime(lst=[i for i in range(2, n)]))
+
 
 """
 Задание 4
@@ -68,25 +70,23 @@ print(is_prime(lst=[i for i in range(2, n)]))
 
 end_numb = int(input("Enter End Number: "))
 
-
 def del_numbers():
+    """Returns the number of deleted items"""
     count = 0
-    """Show the existing list"""
     print(lst)
-    """Delete current item"""
     while True:
         n = int(input("Enter the number you want to delete, or type '0' to quit: "))
         for i in lst:
             if i == n:
                 lst.remove(i)
                 count += 1
-        """ End the loop """
         if n == 0:
             return count
 
 
 lst = [i for i in range(1, end_numb)]
 print(f"The number of digits has been deleted: {del_numbers()}")
+
 
 """
 Задание 5
@@ -95,15 +95,15 @@ print(f"The number of digits has been deleted: {del_numbers()}")
 элементы обоих списков.
 """
 
-
 def common_list(lst_1, lst_2):
-    """join two lists together"""
+    """Returns common list"""
     return lst_1 + lst_2
 
 
 lst_1 = [i for i in range(1, 5)]
 lst_2 = [j for j in range(5, 10)]
 print(common_list(lst_1, lst_2))
+
 
 """
 Задание 6
@@ -114,9 +114,8 @@ print(common_list(lst_1, lst_2))
 щий полученные результаты.
 """
 
-
 def func(range_lst, n):
-    """Add result to new list"""
+    """Returns lsit's items sqrt()"""
     new_list = []
     for i in range_lst:
         new_list.append(i ** n)
