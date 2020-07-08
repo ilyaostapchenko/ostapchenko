@@ -1,9 +1,10 @@
 """ Написал своими словами, чтоб было видно моё понимание о замыкание. """
 print("""
-Замыкание - это функция, которая передала ссылку на свой обьект - другой
-переменной вне тела функции. Таким образом эта функция остаётся "живой"
+Замыкание - это функция, которая передала ссылку на свой обьект другой
+переменной вне зоны этой функции. Таким образом эта функция остаётся "живой"
 после завершения работы функции в которую она вложена.
 """)
+
 
 def outer():
     """ Функция outer возращает обьект функции inner"""
@@ -13,6 +14,7 @@ def outer():
         return message
 
     return inner
+
 
 f = outer()
 print(f())
@@ -32,7 +34,7 @@ print(hello_func(), bye_func(), sep="\n")
 
 
 def make_quadratic(a, b, c):
-    """Returns the quadratic equation "f(x) = ax2 + bx + c". """
+    """Discriminant of the quadratic equation"""
     def quadratic(x):
         return a * x * x + b * x + c
 
@@ -41,3 +43,4 @@ def make_quadratic(a, b, c):
 
 f1 = make_quadratic(3, 7, 2)
 print(f1(2))
+
