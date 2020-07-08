@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$USER_HOME$/Desktop/django/.idea/django.iml" filepath="$USER_HOME$/Desktop/django/.idea/django.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/homework.iml" filepath="$PROJECT_DIR$/.idea/homework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../itstep/.idea/itstep.iml" filepath="$PROJECT_DIR$/../../itstep/.idea/itstep.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../learning_log/.idea/learning_log.iml" filepath="$PROJECT_DIR$/../../learning_log/.idea/learning_log.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../pizzeria/.idea/pizzeria.iml" filepath="$PROJECT_DIR$/../../pizzeria/.idea/pizzeria.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../pypj/.idea/pypj.iml" filepath="$PROJECT_DIR$/../../pypj/.idea/pypj.iml" />
+    </modules>
+  </component>
+</project>
