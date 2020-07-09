@@ -70,7 +70,7 @@ print(is_prime(lst=[i for i in range(2, n)]))
 
 end_numb = int(input("Enter End Number: "))
 
-def del_numbers():
+def del_numbers(lst):
     """Returns the number of deleted items"""
     count = 0
     print(lst)
@@ -85,7 +85,7 @@ def del_numbers():
 
 
 lst = [i for i in range(1, end_numb)]
-print(f"The number of digits has been deleted: {del_numbers()}")
+print(f"The number of digits has been deleted: {del_numbers(lst)}")
 
 
 """
