@@ -50,3 +50,20 @@ def favorite_language(item):
 b = filter(favorite_language, a)
 
 print("My favorite language is", list(b))# Также возращается один раз
+
+
+"""Filter vowels """
+letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "o", "p"]
+
+def filterVowels(letter):
+    vowels = ["a", "e", "i", "o"]
+    if letter in vowels:
+        return True
+    else:
+        return False
+
+filteredVowels = filter(filterVowels, letters)
+
+print("The filtered vowels are:")
+for index, vowel in enumerate(filteredVowels, start=1):
+    print(index, vowel, sep=') ')
