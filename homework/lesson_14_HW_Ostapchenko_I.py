@@ -1,7 +1,7 @@
 # The same tuples for all tasks
-t1 = (1, 4, 8, 3)
+t1 = (1, 4, 8, 3, 5)
 t2 = (1, 6, 7, 3)
-t3 = (1, 4, 2, 3)
+t3 = (1, 4, 2, 3, 8, 7)
 print(f"Tuple 1: {t1}\nTuple 2: {t2}\nTuple 3: {t3}")
 
 # Задание 1
@@ -57,8 +57,8 @@ print("\nTask 2:", unique_elements(t1, t2, t3), sep='\n')
 
 def same_index(t1, t2, t3):
     """Returns the same index of numbers with the same number"""
-    for i in range(len(t1)):
-        if t1[i] == t2[i] == t3[i] and i == i == i:
+    for i in range(len(t1) - 1):
+        if t1[i] == t2[i] == t3[i]:
             print(f"The index of number ({t1[i]}) is {i}")
 
 
